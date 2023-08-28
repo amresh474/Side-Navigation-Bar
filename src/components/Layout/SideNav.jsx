@@ -1,29 +1,25 @@
-import { Link } from "react-router-dom";
-import SidebarFooter from "./SidebarFooter";
+import { Link, useLocation } from "react-router-dom";
+
 import SidebarData from "../../data/sidebar1.json";
 // import Sidebar from "../sidenavBar/Sidebar";
 
 function SideNav() {
+  const location = useLocation();
+
   return (
     <>
-      <div className="sidebar">
-        <h2>Sidebar</h2>
-        <ul>
-          {SidebarData &&
-            SidebarData.map((val, index) => {
-              return (
-                <Link to={val.link} key={index}>
-                  <li key={index}>
-                    <i className={val.icon}></i>
-                    {val.title}
-                  </li>
-                </Link>
-              );
-            })}
-        </ul>
-        {/* <Sidebar/> */}
-        <SidebarFooter />
-      </div>
+      {SidebarData &&
+        SidebarData.map((val, index) => {
+          const isActive = location.pathname === val.link;
+          return (
+            <div className={`menu-item ${isActive && "active"}`} key={index}>
+              <i className={val.icon}></i>
+              <Link to={val.link} >
+                {val.title}
+              </Link>
+            </div>
+          );
+        })}
     </>
   );
 }

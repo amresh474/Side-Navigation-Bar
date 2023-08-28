@@ -1,14 +1,12 @@
 import React from "react";
-import GoogleMapComponent from "../components/map/GoogleMapComponent";
 import { Layout } from "../components/Layout/Layout";
 
-export const Map = () => {
+export const Appointments = () => {
   return (
     <Layout>
   <div className="info">
-      <GoogleMapComponent />
+      <div>Hello About </div>
     </div>
-
     </Layout>
   
   );

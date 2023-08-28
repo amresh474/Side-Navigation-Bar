@@ -1,7 +1,7 @@
-import { Navigate } from "react-router-dom";
+import { Outlet,Navigate } from "react-router-dom";
 
-const PrivateRoute = ({ children }) => {
-  let jwt = true;
+export const PrivateRoute = ({ children }) => {
+  let jwt = localStorage.getItem("token");
   //   const [jwt, setJwt] = useLocalState("", "jwt");
   return jwt ? children : <Navigate to="/login" />;
 };

@@ -13,7 +13,7 @@ export default function Sidebaritem({ item }) {
             {item.title}
           </span>
           <i
-            class="fas fa-angle-down toggle-btn"
+            className="fas fa-angle-down toggle-btn"
             onClick={() => {
               setOpen(!open);
             }}

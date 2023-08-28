@@ -1,28 +1,24 @@
 [
+  
   {
     "title": "Home",
     "icon": "fas fa-home",
-    "link": "/home"
+    "link": "/"
+  },
+  {
+    "title": "Appointments",
+    "icon": "fas fa-list",
+    "link": "/appointments"
+  },
+  {
+    "title": "Apply Doctor",
+    "icon": "fas fa-user-md",
+    "link": "/apply-doctor"
   },
   {
     "title": "Profile",
     "icon": "fas fa-user",
     "link": "/profile"
-  },
-  {
-    "title": "About",
-    "icon": "fas fa-address-card",
-    "link": "/about"
-  },
-  {
-    "title": "Portfolio",
-    "icon": "fas fa-project-diagram",
-    "link": "/portfolio"
-  },
-  {
-    "title": "Blogs",
-    "icon": "fas fa-blog",
-    "link": "/blogs"
   },
   {
     "title": "Contact",

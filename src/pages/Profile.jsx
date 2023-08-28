@@ -1,7 +1,9 @@
 import React from "react";
+import { Layout } from "../components/Layout/Layout";
 
 export const Profile = () => {
   return (
+    <Layout>
     <div className="info">
       <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut
@@ -17,5 +19,6 @@ export const Profile = () => {
         perferendis eos? Consequuntur!
       </div>
     </div>
+    </Layout>
   );
 };
